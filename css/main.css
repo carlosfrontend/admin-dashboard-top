@@ -23,6 +23,64 @@ body {
 .sidebar {
   background-color: #2b8bff;
   grid-area: sidebar;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 3fr 4fr;
+  padding: 20px;
+}
+.dashboard-icon{
+    width: 30px;
+}
+
+.logo{
+    width: 16px;
+}
+
+.dashboard-title{
+    color:#ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+    gap: 4%;
+}
+.user-menu, .admin-menu{
+    list-style-type: none;
+}
+
+ul.user-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,auto);
+    align-items: start;
+    position:relative;
+    top:15%;
+    padding-left: 3%;
+}
+ul.admin-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,10%);
+    align-items: start;
+    position:relative;
+    top:20%;
+    padding-left: 3%;
+}
+
+
+.user-menu li, .admin-menu li {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    gap:8%;
+}
+
+.user-menu li,.admin-menu li{
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
 
 .header {
