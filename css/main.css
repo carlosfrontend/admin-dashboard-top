@@ -1,6 +1,36 @@
-body{
-    background-color: rgb(50, 143, 205);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1{
-    color:#ffffff;
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main-content"
+    "sidebar main-content"
+    "sidebar main-content"
+    "sidebar main-content";
+}
+.sidebar {
+  background-color: #2b8bff;
+  grid-area: sidebar;
+}
+
+.header {
+background-color: lightslategray;
+  grid-area: "header";
+}
+
+.main-content {
+  background-color: lightgreen;
+  grid-area: "main-content";
 }
