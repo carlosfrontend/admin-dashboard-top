@@ -19,6 +19,7 @@ body {
     "sidebar main-content"
     "sidebar main-content"
     "sidebar main-content";
+  font-family: "Sen", sans-serif;
 }
 .sidebar {
   background-color: #2b8bff;
@@ -28,67 +29,153 @@ body {
   grid-template-rows: auto 3fr 4fr;
   padding: 20px;
 }
-.dashboard-icon{
-    width: 30px;
+.dashboard-icon {
+  width: 30px;
 }
 
-.logo{
-    width: 16px;
+.logo {
+  width: 16px;
 }
 
-.dashboard-title{
-    color:#ffffff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: sans-serif;
-    display: grid;
-    grid-template-columns: auto 1fr; 
-    align-items: center;
-    gap: 4%;
+.dashboard-title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 4%;
 }
-.user-menu, .admin-menu{
-    list-style-type: none;
+.user-menu,
+.admin-menu {
+  list-style-type: none;
 }
 
 ul.user-menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,auto);
-    align-items: start;
-    position:relative;
-    top:15%;
-    padding-left: 3%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  align-items: start;
+  position: relative;
+  top: 15%;
+  padding-left: 3%;
 }
-ul.admin-menu{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,10%);
-    align-items: start;
-    position:relative;
-    top:20%;
-    padding-left: 3%;
-}
-
-
-.user-menu li, .admin-menu li {
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: sans-serif;
-    gap:8%;
+ul.admin-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 10%);
+  align-items: start;
+  position: relative;
+  top: 20%;
+  padding-left: 3%;
 }
 
-.user-menu li,.admin-menu li{
-    display: grid;
-    grid-template-columns: auto 1fr;
+.user-menu li,
+.admin-menu li {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  gap: 8%;
+}
+
+.user-menu li,
+.admin-menu li {
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 .header {
-background-color: lightslategray;
+  background-color: rgb(254, 254, 255);
   grid-area: "header";
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 0 10px;
+  padding: 0.3em 30px;
 }
 
 .main-content {
   background-color: lightgreen;
   grid-area: "main-content";
+}
+
+.lbl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input#search {
+  border-radius: 25px;
+  width: 42vw;
+  height: 4vh;
+  background-color: rgba(114, 117, 117, 0.342);
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.search-logo,
+.bell-logo {
+  width: 20px;
+}
+.octopus-logo {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 40px;
+  background-color: rgb(170, 184, 11);
+  transform: rotate(-25deg);
+}
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+}
+.login-container span {
+  font-weight: bold;
+}
+.welcome-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5%;
+}
+.welcome-text{
+  display: flex;
+  flex-direction: column;
+}
+.welcome-text small{
+  font-weight: 400;
+
+}
+.welcome-text span{
+  font-weight: bold;
+}
+
+.welcome-logo{
+  width: 60px;
+}
+.buttons-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttons-container > *{
+  height: 5vh;
+  width: 7vw;
+  border: none;
+  background-color: #2b8bff;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.3vw;
 }

@@ -1,29 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dasboard-The Odin Project</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="sidebar">
-        <span class="dashboard-title"><img class="dashboard-icon" src="./images//view-dashboard.svg" alt="dashboard icon">Dashboard</span>
-        <ul class="user-menu">
-            <li><img class="logo" src="./images/home.svg" alt="home logo">Home</li>
-            <li><img src="./images/card-account-details-outline.svg" alt="card logo" class="logo">Profile</li>
-            <li><img src="./images/message-reply.svg" alt="message logo" class="logo">Messages</li>
-            <li><img src="./images/clock-time-three.svg" alt="clock logo" class="logo">History</li>
-            <li><img src="./images/file-multiple.svg" alt="file multiple logo" class="logo">Tasks</li>
-            <li><img src="./images/account-group.svg" alt="account group logo" class="logo">Communities</li>
-        </ul>
-        <ul class="admin-menu">
-            <li><img src="./images/cog.svg" alt="gear logo" class="logo">Settings</li>
-            <li><img src="./images/help-box.svg" alt="help box logo" class="logo">Support</li>
-            <li><img src="./images/shield-check.svg" alt="shield logo" class="logo">Privacy</li>
-        </ul>
+      <span class="dashboard-title"
+        ><img
+          class="dashboard-icon"
+          src="./images//view-dashboard.svg"
+          alt="dashboard icon"
+        />Dashboard</span
+      >
+      <ul class="user-menu">
+        <li>
+          <img class="logo" src="./images/home.svg" alt="home logo" />Home
+        </li>
+        <li>
+          <img
+            src="./images/card-account-details-outline.svg"
+            alt="card logo"
+            class="logo"
+          />Profile
+        </li>
+        <li>
+          <img
+            src="./images/message-reply.svg"
+            alt="message logo"
+            class="logo"
+          />Messages
+        </li>
+        <li>
+          <img
+            src="./images/clock-time-three.svg"
+            alt="clock logo"
+            class="logo"
+          />History
+        </li>
+        <li>
+          <img
+            src="./images/file-multiple.svg"
+            alt="file multiple logo"
+            class="logo"
+          />Tasks
+        </li>
+        <li>
+          <img
+            src="./images/account-group.svg"
+            alt="account group logo"
+            class="logo"
+          />Communities
+        </li>
+      </ul>
+      <ul class="admin-menu">
+        <li>
+          <img src="./images/cog.svg" alt="gear logo" class="logo" />Settings
+        </li>
+        <li>
+          <img
+            src="./images/help-box.svg"
+            alt="help box logo"
+            class="logo"
+          />Support
+        </li>
+        <li>
+          <img
+            src="./images/shield-check.svg"
+            alt="shield logo"
+            class="logo"
+          />Privacy
+        </li>
+      </ul>
     </div>
-    <di class="header"></di>
+    <div class="header">
+      <label class="lbl" for="search"
+        ><img
+          src="./images/magnify.svg"
+          alt="magnify logo"
+          class="search-logo" /><input id="search" type="search"
+      /></label>
+      <div class="login-container">
+        <img
+          src="./images/bell-ring-outline.svg"
+          alt="bell.ligi"
+          class="bell-logo"
+        />
+        <img
+          src="./images/octopus-deploy.svg"
+          alt="octopus logo"
+          class="octopus-logo"
+        />
+        <span class="user-login-name">Morgan Oackley</span>
+      </div>
+      <div class="welcome-container">
+        <img
+          class="octopus-logo welcome-logo"
+          src="./images/octopus-deploy.svg"
+          alt="octopus logo"
+        />
+        <div class="welcome-text">
+          <small>Hi there,</small>
+          <span>Morgan Oakley (@morgan)</span>
+        </div>
+      </div>
+      <div class="buttons-container">
+        <button>New</button><button>Upload</button><button>Share</button>
+      </div>
+    </div>
     <div class="main-content"></div>
-</body>
+  </body>
 </html>
