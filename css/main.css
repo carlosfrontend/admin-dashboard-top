@@ -95,8 +95,12 @@ ul.admin-menu {
 }
 
 .main-content {
-  background-color: lightgreen;
+  background-color: rgba(117, 120, 117, 0.377);
   grid-area: "main-content";
+  display: grid;
+  grid-template-columns: 1fr 1fr 30%;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  padding: 1em;
 }
 
 .lbl {
